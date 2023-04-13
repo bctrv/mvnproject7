@@ -26,10 +26,10 @@ public class MovieManager {
 
     public String[] findLast() {
         int resultslength;
-        if (movies.length < 5) {
+        if (movies.length < limit) {
             resultslength = movies.length;
         } else {
-            resultslength = 5;
+            resultslength = limit;
         }
         String[] tmp = new String[resultslength];
         for (int i = 0; i < tmp.length; i++) {
